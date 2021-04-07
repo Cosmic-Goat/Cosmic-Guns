@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "cosmic-guns",
+  "version": "0.0.1",
+  "name": "Cosmic Guns",
+  "description": "A gun mod with customisable weapons!",
   "authors": [
-    "Me!"
+    "Shrey Pasricha"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Cosmic-Goat/Cosmic-Guns",
+    "sources": "https://github.com/Cosmic-Goat/Cosmic-Guns"
   },
-
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "icon": "assets/cosmic-guns/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+      {
+        "adapter": "kotlin",
+        "value": "space.cosmicgoat.cosmicguns.CosmicGuns"
+      }
     ]
   },
   "mixins": [
@@ -28,7 +28,7 @@
   "depends": {
     "fabricloader": ">=0.8.7",
     "fabric": "*",
-    "fabric-language-kotlin": "*",
+    "fabric-language-kotlin": ">=1.5.0+kotlin.1.4.31",
     "minecraft": "1.16.x"
   },
   "suggests": {

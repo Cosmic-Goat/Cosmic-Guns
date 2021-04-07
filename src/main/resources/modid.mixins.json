@@ -1,8 +1,9 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "package": "space.cosmicgoat.cosmicguns.mixin",
+  "compatibilityLevel": "JAVA_11",
   "mixins": [
+    "ExampleMixin"
   ],
   "client": [
     "ExampleMixin"
